@@ -1,0 +1,93 @@
+#socials{
+    width: 100%;
+    height: 102vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    .sign{
+        position: absolute;
+        width: 100%;
+        height: 20vh;
+        top: 5%;
+        z-index: 3;
+        img{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            left: 0;
+        }
+    }
+    .prof{
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        height: 30vh;
+        z-index: 2;
+        place-items: center;
+        display: grid;
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .logo{
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        height: 30vh;
+        z-index: 3;
+        place-items: center;
+        display: grid;
+        img{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            right: 0;
+        }
+    }
+    .links{
+        display: grid;
+        place-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        z-index: 4;
+        height: 10vh;
+        width: 60%;
+        gap: 5%;
+
+        .details{
+            display: flex;
+            flex-direction: row;
+            gap: 15%;
+            width: 50%;
+            position: absolute;
+            left:20%;
+            border-radius: 20px;
+            background-image: linear-gradient(to right , transparent 20%, black 80%);
+            
+
+            p{
+                font-size: 1.5rem;
+                font-family: 'Italianno', cursive;
+                font-family: 'Dancing Script', cursive;
+                        background-image: linear-gradient(to right, #dfdae3,black);
+                        color: transparent;
+                        background-clip: text;
+            }
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

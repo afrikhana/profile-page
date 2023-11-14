@@ -48,30 +48,63 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        background-color: #fce8c9;
+        background-color: #fff4ec;
         width: 50%;
         height: 105vh;
         right: 0;
 
         #front{
-            background-color: #851494;
+            position: absolute;
             width: 100%;
             height: 40vh;
-            .scroll{
-                display: flex;
-                flex-direction: row;
-                position: absolute;
-                width: 70%;
-                margin: 10% 0 0 20%;
-                gap: 10%;
-                background-color: aqua;
-                overflow: scroll;
-                img{
-                    z-index: 1;
-                    width: 150px;
-                    height: 250px;
-                    object-fit: cover;
-                }
+            overflow: hidden;
+            top: 5%;
+                .scroll{
+                    display: flex;
+                    position: absolute;
+                    width: max-content;
+                    margin: 10% 0 0 20%;
+                    height: 30vh;
+                    gap: 10%;
+                    animation: slide 10s linear infinite;
+                  
+                    img{
+                        z-index: 1;
+                        width: 150px;
+                        height: 250px;
+                        object-fit: cover;
+                        margin-left: 3%;
+                    }
+                    .photo-c{
+                     position: absolute;
+                     display: flex;
+                     width: 165%;
+                     flex-direction: row;
+                     bottom: 0;
+                     z-index: 2;
+                     gap: 12%;
+                     margin-top: 10%;
+                        p{
+                            
+                            font-size: 2rem;
+                        font-family: 'Dancing Script', cursive;
+                        background-image: linear-gradient(to right,#f4ceff,#851494);
+                        color: transparent;
+                        background-clip: text;
+                        
+                    }
+                    }
+                    @keyframes slide{
+                        0% {
+                            transform: translateX(0);
+                            animation-timing-function: ease-in;
+                            animation-fill-mode: forwards;
+                        }
+                        100%{
+                            transform: translateX(-100%);
+                        }
+                    }
+            
             }
             h1{
                 position: absolute;
@@ -80,23 +113,61 @@
                 font-size: 8rem;
                 font-weight: lighter;
                 line-height: 3rem;
-                margin: 5% 0 0 10%;
+                color: black;
+                margin: 5% 0 0 2%;
             }
         }
         #back{
-            background-color: greenyellow;
-            margin: 20% 0 0 0;
+            position: absolute;
+            top: 55%;
             width: 100%;
             height: 40vh;
-            h1{
+            overflow: hidden;
+            .scroll1{
+                display: flex;
                 position: absolute;
-                margin: 5% 0 0 5%;
-                font-family: 'Italianno', cursive;
-                font-size: 6rem;
-                font-weight: lighter;
-                line-height: 3rem;
-               
+                width: max-content;
+                margin: 10% 0 0 20%;
+                height: 30vh;
+                gap: 15%;
+                animation: slide 10s linear infinite;
+                .photo-c{
+                    position: absolute;
+                    display: flex;
+                    width: 165%;
+                    flex-direction: row;
+                    bottom: 0;
+                    z-index: 2;
+                    gap: 16%;
+                    margin-top: 10%;
+                       p{
+                           
+                           font-size: 2rem;
+                       font-family: 'Dancing Script', cursive;
+                       background-image: linear-gradient(to right,#f4ceff,#851494);
+                       color: transparent;
+                       background-clip: text;
+                       
+                   }}
+            img{
+                z-index: 1;
+                width: 150px;
+                height: 250px;
+                object-fit: cover;
+                margin-left: 3%;
             }
+            
+        }
+        h1{
+            position: absolute;
+            margin: 5% 0 0 2%;
+            font-family: 'Italianno', cursive;
+            font-size: 6rem;
+            z-index: 2;
+            font-weight: lighter;
+            line-height: 3rem;
+           
+        }
         }
     }
 }
