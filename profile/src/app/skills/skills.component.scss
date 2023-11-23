@@ -4,6 +4,29 @@
     display: flex;
     flex-direction: row;
 
+    .count{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        width: max-content;
+        margin: 30% 0 0 8%;
+
+        p{
+            font-size: 3rem;
+            font-family: 'Crimson Pro', serif;
+            background-image: linear-gradient(to right, #dfdae3,black);
+            color: transparent;
+            background-clip: text;
+        }
+        #min{
+            font-size: 1rem;
+        }
+        #sec{
+            font-size: 1rem;
+        }
+    }
+
     .content1{
         display: flex;
         flex-direction: column;
