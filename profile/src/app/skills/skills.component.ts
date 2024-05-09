@@ -11,6 +11,7 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
           development in software development are as follows.</p>
     </div>
     <div class="count">
+      <h1>Dev Timeline</h1>
         <p>Yr:{{ years }}</p>
         <p>M:{{ months }}</p>
         <p>D:{{ days }}</p>

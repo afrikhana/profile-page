@@ -4,12 +4,27 @@ import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@
   selector: 'app-clients',
   template: `
     <nav>
-      <a (click)="scrollToElement('home')">Home</a>
-      <a (click)="scrollToElement('about')">About</a>
-      <a (click)="scrollToElement('skills')">Skills</a>
-      <a (click)="scrollToElement('socials')">Social</a>
-      <div class="animation start-home"></div>
+      <section id='hm' (click)="scrollToElement('home')"><div></div><p>Home</p></section>
+      <section id='ab'(click)="scrollToElement('about')"><div></div><p>About</p></section>
+      <section id='sk' (click)="scrollToElement('skills')"><div></div><p>Skills</p></section>
+      <section id='so'(click)="scrollToElement('socials')"><div></div><p>Social</p></section>
+      
     </nav>
+    <div class="animation start-home">
+        <section  (click)="scrollToElement('home')">
+        <div id='vrt'></div>
+      </section>
+        <section  (click)="scrollToElement('about')">
+        <div id='vrt'></div>
+      </section>
+        <section (click)="scrollToElement('skills')">
+        <div id='vrt'></div>
+      </section>
+        <section  (click)="scrollToElement('socials')">
+        <div id='vrt'></div>
+      </section>
+
+      </div>
     <router-outlet></router-outlet>
   `,
   styleUrls: ['./clients.component.scss'],

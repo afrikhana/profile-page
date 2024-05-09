@@ -1,81 +1,180 @@
 nav{
-    position: fixed;
-    width: 400px;
-    height: 20px;
-    z-index: 3;
-    font-size: 1.5rem;
-    top: 0;
-    margin: 2% 0 0 40%;
+
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  // right: 0px;
+  margin:0 0 0 95%;
+  top: 30.5%;
+  z-index: 12;
+  gap: 90px;
+
+  section{
     display: flex;
-    max-width: max-content;
-
-    a{
-        padding: 4px;
-  height: 100%;
-  font-size: 15px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  background: linear-gradient(to right, black 35%,#e8e2e4);
-  background-clip: text; /* For webkit browsers like Chrome and Safari */
-  color: transparent; /* Set text color to transparent */
-  cursor: pointer;
-        } 
-        .animation{
-            position: absolute;
-            height: 100%;
-            top: 4px;
-            z-index: 0;
-            transition: all .5s ease 0s;
-            border-radius: 8px;
-          }
-          a:nth-child(1){
-            width: 100px;
-            left: 2px;
-            
-          }
-          a:nth-child(2){
-            width:110px ;
-            top: 0;
-          } 
-          a:nth-child(3){
-          width: 100px;
-          } 
-          a:nth-child(4){
-            width: 160px;
-          } 
-
-          .start-home, a:nth-child(1):hover~.animation{
-            width: 15%;
-            height: 3px;
-            top: 18.8px;
-            left: 10px;
-            background-color: #f4e3ff;
-          }
-          .start-home, a:nth-child(2):hover~.animation{
-            width: 35%;
-            height: 3px;
-            left: 100;
-            background-color: #ecccff;
-          }
-          .start-home, a:nth-child(3):hover~.animation{
-            width: 53%;
-            height: 3px;
-            left: 210;
-            background-color: #dda3ff;
-          } 
-          .start-home, a:nth-child(4):hover~.animation{
-            width: 75%;
-            height: 3px;
-            left: 400;
-            background-color: #c869ff;
-          }  
-          .start-home, a:nth-child(5):hover~.animation{
-            width: 10px;
-            height: 3px;
-            left: 350;
-            background-color: #a2ffc1;
-          }   
-          
+    flex-direction: row;
+    z-index: 11;
+    place-items: center;
+    div{
+      width: 160px;
+      height: 1px;
+      background-color: black;
+    }
   }
+  #hm{
+    p, div {
+      transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+    }
+    height: 40px;
+    &:hover{
+      p{
+        transform: translateX(-120px);
+      }
+      div{
+        transform: translateX(-30px);
+        width: 50px;
+      }
+
+    }
+  }
+  #ab{
+    p, div {
+      transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+    }
+    height: 40px;
+    &:hover{
+      p{
+        transform: translateX(-120px);
+      }
+      div{
+        transform: translateX(-30px);
+        width: 50px;
+      }
+      
+    }
+  }
+  #sk{
+    p, div {
+      transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+    }
+    height: 40px;
+    &:hover{
+      p{
+        transform: translateX(-120px);
+      }
+      div{
+        transform: translateX(-30px);
+        width: 50px;
+      }
+      
+    }
+  }
+  #so{
+    p, div {
+      transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+    }
+    height: 40px;
+    &:hover{
+      p{
+        transform: translateX(-120px);
+      }
+      div{
+        transform: translateX(-30px);
+        width: 50px;
+      }
+      
+    }
+  }
+
+  
+  
+}
+.animation{
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  position: fixed;
+  right: 2%;
+  top: 30%;
+  z-index: 11;
+
+  section{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: grid;
+    place-items: center;
+
+    #vrt{
+      background-color: black;
+      width: 1px;
+      height: 160px;
+      transform: rotate(90);
+      z-index: 2;
+      
+    }
+   
+    
+
+  }
+  
+  
+}
+        // .animation{
+        //     position: absolute;
+        //     height: 100%;
+        //     top: 4px;
+        //     z-index: 0;
+        //     transition: all .5s ease 0s;
+        //     border-radius: 8px;
+        //   }
+        //   a:nth-child(1){
+        //     width: 100px;
+        //     left: 2px;
+            
+        //   }
+        //   a:nth-child(2){
+        //     width:110px ;
+        //     top: 0;
+        //   } 
+        //   a:nth-child(3){
+        //   width: 100px;
+        //   } 
+        //   a:nth-child(4){
+        //     width: 160px;
+        //   } 
+
+        //   .start-home, a:nth-child(1):hover~.animation{
+        //     width: 15%;
+        //     height: 3px;
+        //     top: 18.8px;
+        //     left: 10px;
+        //     background-color: #f4e3ff;
+        //   }
+        //   .start-home, a:nth-child(2):hover~.animation{
+        //     width: 35%;
+        //     height: 3px;
+        //     left: 100;
+        //     background-color: #ecccff;
+        //   }
+        //   .start-home, a:nth-child(3):hover~.animation{
+        //     width: 53%;
+        //     height: 3px;
+        //     left: 210;
+        //     background-color: #dda3ff;
+        //   } 
+        //   .start-home, a:nth-child(4):hover~.animation{
+        //     width: 75%;
+        //     height: 3px;
+        //     left: 400;
+        //     background-color: #c869ff;
+        //   }  
+        //   .start-home, a:nth-child(5):hover~.animation{
+        //     width: 10px;
+        //     height: 3px;
+        //     left: 350;
+        //     background-color: #a2ffc1;
+        //   }   
+          
+  // }
