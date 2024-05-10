@@ -19,6 +19,18 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
         <p id='min'>Min:{{ minutes }}</p>
         <p id='sec'>Sec:{{ seconds }}</p>
       </div>
+      <div class="content">
+        <h1>About</h1>
+        <h2>Understanding one's self</h2>
+        <p>Hello there thanks for taking your time to see
+           my portfolio, my name in Brian and my 
+          fervor for technology and penchant for creative problem-solving has 
+          always been a driving forces in my journey. As a self-taught developer in various 
+          domains of Software Development, i've cultivated resourcefulness and adaptability,
+          The Future am dedicated to achieve isn't the simplest either.The drive of not giving up 
+          has always been my talent and I soar to be a 
+          greater me in the upcoming development cycle in both software and games.</p>
+      </div>
     <div class="content2">
       <!-- frontennt content -->
       <div id="front">

@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SocialComponent } from './social/social.component';
+import { SharedComponent } from './shared/shared.component';
+import { CustomHeadersComponent } from './shared/UI/custom-headers/custom-headers.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SocialComponent } from './social/social.component';
     HomeComponent,
     AboutComponent,
     SkillsComponent,
-    SocialComponent
+    SocialComponent,
+    SharedComponent,
+    CustomHeadersComponent
   ],
   imports: [
     BrowserModule,
