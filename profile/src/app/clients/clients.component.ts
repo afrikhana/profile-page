@@ -11,16 +11,16 @@ import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@
       
     </nav>
     <div class="animation start-home">
-        <section  (click)="scrollToElement('home')">
+        <section>
         <div id='vrt'></div>
       </section>
-        <section  (click)="scrollToElement('about')">
+        <section >
         <div id='vrt'></div>
       </section>
-        <section (click)="scrollToElement('skills')">
+        <section>
         <div id='vrt'></div>
       </section>
-        <section  (click)="scrollToElement('socials')">
+        <section>
         <div id='vrt'></div>
       </section>
 

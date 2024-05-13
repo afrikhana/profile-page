@@ -9,6 +9,7 @@ $p-letter-spacing-small: 0.03em;
     background-color: #F6F6F6;
     width: 100%;
     height: 105vh;
+    gap: 20px;
 
 
     .header{
@@ -94,6 +95,23 @@ $p-letter-spacing-small: 0.03em;
 
         
     }
+    #work {
+        width: 90%;
+    height: 70vh;
+    margin-left: 5%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto; /* Allow vertical scrollbar */
+    display: flex;
+    flex-direction: column;
+
+    ::-webkit-scrollbar {
+        display: none; 
+    }
+
+    /* Firefox */
+    scrollbar-width: none; 
+}
+
     
 
 }

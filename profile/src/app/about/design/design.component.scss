@@ -1,0 +1,77 @@
+.designs {
+    width: 90%;
+    height: 70%;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin:0 0 0 5%;
+    
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        width: 30%;
+        margin: 40px 0 0 0 ;
+        height: max-content;
+        p{
+            font-size: 1.8rem;
+        }
+        #header{
+            font-weight: bolder;
+            color: #5D5D5D;
+            font-style: normal;
+            
+        }
+        #reel{
+            font-weight: 200;
+            color: #5D5D5D;
+        }
+        
+
+        #stack{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            #ss{
+                color: #FF800B;
+                font-weight: 800;
+            }
+        }
+        
+    }
+    
+
+    #images {
+            width: max-content;
+            max-width: 65%;
+            height: max-content;
+            display: flex;
+            flex-wrap: wrap;
+            overflow-x: auto;
+            border-radius: 10px;
+            gap: 5px;
+            background: linear-gradient(to bottom, rgba(246, 246, 246, 0.8), rgba(246, 246, 246, 0.5)); /* Adjust alpha values for desired translucency */
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px; /* Adjust padding as needed */
+            
+            &:hover {
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+                z-index: 1;
+            }
+
+            img {
+                width: auto;
+                max-width: calc(400px - 72px);
+                height: auto;
+                max-height: 300px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+    }
+
+  
+   
+}

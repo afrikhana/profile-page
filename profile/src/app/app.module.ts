@@ -10,6 +10,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { SocialComponent } from './social/social.component';
 import { SharedComponent } from './shared/shared.component';
 import { CustomHeadersComponent } from './shared/UI/custom-headers/custom-headers.component';
+import { DesignComponent } from './about/design/design.component';
+import { WebsitesComponent } from './about/websites/websites.component';
+import { OpcityHeaderComponent } from './shared/UI/opcity-header/opcity-header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CustomHeadersComponent } from './shared/UI/custom-headers/custom-header
     SkillsComponent,
     SocialComponent,
     SharedComponent,
-    CustomHeadersComponent
+    CustomHeadersComponent,
+    DesignComponent,
+    WebsitesComponent,
+    OpcityHeaderComponent
   ],
   imports: [
     BrowserModule,
