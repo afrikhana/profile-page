@@ -97,12 +97,13 @@ $p-letter-spacing-small: 0.03em;
     }
     #work {
         width: 90%;
-    height: 70vh;
+    height: 80vh;
     margin-left: 5%;
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: auto; /* Allow vertical scrollbar */
     display: flex;
     flex-direction: column;
+   
 
     ::-webkit-scrollbar {
         display: none; 

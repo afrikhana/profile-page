@@ -40,9 +40,18 @@ import { Router } from '@angular/router';
 export class AboutComponent {
   isRotated: boolean = false;
   
-  constructor() {}
+  ngOnInit() {
+    // Check if there's a stored value for the toggle state
+    const storedState = localStorage.getItem('isRotated');
+    if (storedState) {
+      this.isRotated = JSON.parse(storedState);
+    }
+  }
 
   toggleContent() {
     this.isRotated = !this.isRotated;
+    // Store the toggle state in localStorage
+    localStorage.setItem('isRotated', JSON.stringify(this.isRotated));
   }
+  
 }
