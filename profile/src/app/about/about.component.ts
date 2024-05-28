@@ -18,6 +18,7 @@ import { Router } from '@angular/router';
         </section>
       </div>
       <div class='content'>
+        <p>{{ currentName }}<p>
       <button [class.rotated]="isRotated" (click)="toggleContent()">
           <span class="material-symbols-outlined">
             arrow_cool_down
@@ -39,6 +40,8 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent {
   isRotated: boolean = false;
+  currentName: string = 'Design';
+  
   
   ngOnInit() {
     // Check if there's a stored value for the toggle state
@@ -46,12 +49,23 @@ export class AboutComponent {
     if (storedState) {
       this.isRotated = JSON.parse(storedState);
     }
+
+    const storedName = localStorage.getItem('currentName');
+    if (storedName) {
+      this.currentName = storedName;
+    }
   }
 
   toggleContent() {
     this.isRotated = !this.isRotated;
     // Store the toggle state in localStorage
     localStorage.setItem('isRotated', JSON.stringify(this.isRotated));
+
+    this.currentName = this.currentName === 'Design' ? 'WebSite' : 'Design';
+    // Store the current name in localStorage
+    localStorage.setItem('currentName', this.currentName);
   }
+
+  
   
 }

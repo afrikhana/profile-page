@@ -4,53 +4,69 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
   selector: 'app-skills',
   template: `
    <div id="skills">
-   
+        <div class='header'>
+              <section id='display'>
+                <section id='dip'>
+                  <h3>Work</h3>
+                  <h1>Section To Show</h1>
+                </section>
+                <h1 id='case'>Case Implemented Skills</h1>
+              </section>
+              <section id='abt'>
+                <p>It's all about your emotions in art not about perfecting what you think is right</p>
+              </section>
+            </div>
+
+        <div class='ccmain'>
+            <div id= 'content'>
+                    <h1>Print('About:')</h1>
+                    <h3>Hello there, and thank you for taking the time to view my portfolio. My name is Brian, and I am a dedicated software 
+                      developer with a passion for continuous learning and problem-solving. I thrive on tackling complex 
+                      challenges and transforming them into innovative solutions. My enthusiasm for technology drives me to
+                      constantly expand my knowledge and skills. Through perseverance and creativity, I aim to achieve excellence in every project I undertake. 
+                      Join me on this journey of discovery and achievement as we push the boundaries of what is possible together.</h3>
+
+            </div>
+            <div id= 'stack'>
+              <p>Stack</p>
+              <div class='main'>
+                <section>
+                  <div id='colorbox'></div>
+                  <div id='colorline'></div>
+                  <div id='box'>
+                    <img src='' alt=''>
+                  </div>
+                </section>
+                <section>
+                  <div id='colorbox'></div>
+                  <div id='colorline'></div>
+                  <div id='box'>
+                    <img src='' alt=''>
+                  </div>
+                </section>
+                <section>
+                  <div id='colorbox'></div>
+                  <div id='colorline'></div>
+                  <div id='box'>
+                    <img src='' alt=''>
+                  </div>
+                </section>
+              </div>
+
+            </div>
+
+        </div>
+
+      
     
    </div>
   `,
   styleUrls: ['./skills.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SkillsComponent implements OnInit, OnDestroy{
-
- years: number = 0;
- months: number = 0;
- days: number = 0;
- hours: number = 0;
- minutes: number = 0;
- seconds: number = 0;
- countdownInterval: any;
-
- constructor(private changeDetectorRef: ChangeDetectorRef) {}
-
- ngOnInit() {
-   const startDate = new Date('2023-11-01T00:00:00');
-   this.updateCountdown(startDate);
-
-   this.countdownInterval = setInterval(() => {
-     this.updateCountdown(startDate);
-     this.changeDetectorRef.detectChanges(); // Trigger change detection
-   }, 1000);
- }
-
- updateCountdown(startDate: Date): void {
-   const currentDate = new Date();
-   const timeDifference = currentDate.getTime() - startDate.getTime();
-
-   this.seconds = Math.floor((timeDifference / 1000) % 60);
-   this.minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
-   this.hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
-   this.days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-   this.months = Math.floor(this.days / 30);
-   this.years = Math.floor(this.months / 12);
- }
-
- ngOnDestroy() {
-   if (this.countdownInterval) {
-     clearInterval(this.countdownInterval);
-   }
- }
-   
+export class SkillsComponent {
+    
+  
 
 
 }
