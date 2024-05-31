@@ -75,9 +75,9 @@ $p-letter-spacing-small: 0.03em;
         display: flex;
         flex-direction: row;
 
-        width: 90%;
+        width: 85%;
         height: 75vh;
-        margin: 10px 0 0 5%;
+        margin: 10px 0 0 8%;
         justify-content: space-between;
         align-items: center;
 
@@ -105,43 +105,118 @@ $p-letter-spacing-small: 0.03em;
             margin-left: auto;
             width: 40%;
             height: 60vh;
-            background-color: aqua;
+
+            h3{
+                color: #FF800B;
+
+                    font-weight: 900;
+            }
+            
 
             .main{
                 width: 100%;
-                height: 80%;
-                background-color: whitesmoke;
+                height: max-content;
                 display: flex;
-                    flex-direction: row;
-                    gap: 10px;
+                flex-wrap: wrap;
+                gap: 10px;
+                
+                
 
-                section{
+                    
+
+                #sst{
                     width: 12rem;
                     height: 6rem;
-                    background-color: rgb(81, 119, 151);
                     display: flex;
                     flex-direction: row;
-                    // align-items: center;
-                    // justify-content: center;
+                    align-items: center;
+                    
+                    
 
                     #colorbox{
-                        width: 2rem;
-                        height: 2rem;
-                        color: #FF800B;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: #FF800B;
                     }
                     #colorline{
-                        width: 1rem;
+                        width: 2rem;
                         height: 1px;
-                        color: orange;
+                        background-color: orange;
                     }
                     #box{
                         height: 4rem;
-                        width: 4rem;
+                        width: 5rem;
                         display: flex;
                         place-items: center;
                         justify-content: center;
+                        background-color: #5D5D5D;
+                        border-radius: 10px;
                     }
 
+                }
+                
+            }
+            #footer{
+                width: 35%;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+             
+                
+               
+
+
+                section{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                   
+                    
+
+                    P{
+                        font-size: 0.8rem;
+                        color: #FF800B;
+                        font-weight: 500;
+                    }
+                    #been{
+                        color: #B0B0B0;
+                    }
+                    #learn{
+                        color: #5D5D5D;
+                    }
+
+                    #colorbox{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: #FF800B;
+                    }
+                    #colorline{
+                        width: 2rem;
+                        height: 1px;
+                        background-color: orange;
+                    }
+                    #colorbox1{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: #D9D9D9;
+                    }
+                    #colorline1{
+                        width: 2rem;
+                        height: 1px;
+                        background-color: #D9D9D9;
+                    }
+                    #colorbox2{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: #5D5D5D;
+                    }
+                    #colorline2{
+                        width: 2rem;
+                        height: 1px;
+                        background-color: #5D5D5D;
+                    }
                 }
             }
         }
