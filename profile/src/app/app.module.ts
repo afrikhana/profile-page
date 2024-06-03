@@ -13,6 +13,8 @@ import { CustomHeadersComponent } from './shared/UI/custom-headers/custom-header
 import { DesignComponent } from './about/design/design.component';
 import { WebsitesComponent } from './about/websites/websites.component';
 import { OpcityHeaderComponent } from './shared/UI/opcity-header/opcity-header.component';
+import { ServicesComponent } from './social/services/services.component';
+import { ContactComponent } from './social/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { OpcityHeaderComponent } from './shared/UI/opcity-header/opcity-header.c
     CustomHeadersComponent,
     DesignComponent,
     WebsitesComponent,
-    OpcityHeaderComponent
+    OpcityHeaderComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

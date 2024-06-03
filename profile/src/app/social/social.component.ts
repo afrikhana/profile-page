@@ -4,7 +4,21 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-social',
   template: `
     <div id="socials">
-      
+    <div class='header'>
+    <section id='display'>
+      <section id='dip'>
+        <h3>Work</h3>
+        <h1>Section To Show</h1>
+      </section>
+      <h1 id='case'>Case Implemented Skills</h1>
+    </section>
+    <section id='abt'>
+      <p>It's all about your emotions in art not about perfecting what you think is right</p>
+    </section>
+  </div>
+
+      <app-services></app-services>
+      <app-contact></app-contact>
     </div>
   `,
   styleUrls: ['./social.component.scss'],

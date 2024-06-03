@@ -1,0 +1,159 @@
+.services{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 0 0 5%;
+    
+
+    section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 100%;
+        
+        div{
+            width: calc(32% - 30px);
+            height: 30vh;
+            border-radius: 20px;
+            border: 0.8px solid #454545;
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+            padding: 10px;
+            font-family: "Gideon Roman", serif;
+            transition: background-color 400ms ease-out, transform 400ms ease-out;
+
+            h1{
+                color: #B0B0B0;
+                font-size: 3rem;
+                font-weight: 200;
+
+            }
+            h2{
+                color: #5D5D5D;
+                font-size: 3rem;
+                font-weight: 200;
+            }
+            p{
+                color: #B0B0B0;
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            &:hover{
+                background-color: #D9D9D9;
+                
+                opacity: 2;
+                border: 0.8px solid #B0B0B0;
+
+                h1{
+                    color: #FF800B;
+                }
+            }
+
+
+        }
+        #support{
+            width: 52%;
+        }
+        #web {
+            position: relative; // Make #web a containing block for positioned elements
+            p {
+              transition: color 400ms ease-out;
+              span {
+                opacity: 0;
+              }
+            }
+            
+            img {
+              position: absolute; 
+              opacity: 0;
+              bottom: 50px; 
+              right: 30px; 
+              width: 10rem;
+              height: 10rem;
+              object-fit: contain;
+              transition: opacity 400ms ease-out;
+            }
+            
+            &:hover {
+              p {
+                span {
+                  color: #FF800B;
+                  opacity: 1;
+                }
+              }
+              img{
+                opacity: 1;
+              }
+            }
+          }
+          #ui{
+            position: relative;
+
+            img{
+                position: absolute;
+                width: 15rem;
+                height: 15rem;
+                object-fit: contain;
+                opacity: 0;
+                transition: opacity 400ms ease-out;
+                right: 0;
+                top: 0;
+
+            }
+            &:hover{
+                img{
+                    opacity: 1;
+                }
+            }
+          }
+          #analysis{
+            position: relative;
+
+            img{
+                position: absolute;
+                width: 24rem;
+                height: 16rem;
+                left: 10%;
+                top: 0;
+                object-fit: contain;
+                opacity: 0;
+                transition: opacity 400ms ease-out;
+            }
+            &:hover{
+                img{
+                    opacity: 1;
+                }
+            }
+          }
+          #support{
+            position: relative;
+
+            img{
+                position: absolute;
+                width: 25rem;
+                height: 25rem;
+                object-fit: contain;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                transition: opacity 400ms ease-out;
+
+            }
+            &:hover{
+                img{
+                    opacity: 1
+                };
+            }
+          }
+
+    }
+}
