@@ -1,6 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// animations and angular materials
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
+// page components
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientsComponent } from './clients/clients.component';
@@ -34,7 +44,11 @@ import { ContactComponent } from './social/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

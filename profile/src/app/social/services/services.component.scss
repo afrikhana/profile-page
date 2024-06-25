@@ -14,7 +14,7 @@
         width: 100%;
         
         div{
-            width: calc(32% - 30px);
+            width: calc(30% - 30px);
             height: 30vh;
             border-radius: 20px;
             border: 0.8px solid #454545;
@@ -75,10 +75,10 @@
             img {
               position: absolute; 
               opacity: 0;
-              bottom: 50px; 
-              right: 30px; 
-              width: 10rem;
-              height: 10rem;
+              bottom: 45px; 
+              right: 20px; 
+              width: auto;
+              height: auto;
               object-fit: contain;
               transition: opacity 400ms ease-out;
             }
@@ -100,8 +100,8 @@
 
             img{
                 position: absolute;
-                width: 15rem;
-                height: 15rem;
+                width: auto;
+                height: auto;
                 object-fit: contain;
                 opacity: 0;
                 transition: opacity 400ms ease-out;
@@ -120,10 +120,10 @@
 
             img{
                 position: absolute;
-                width: 24rem;
-                height: 16rem;
+                width: auto;
+                height: auto;
                 left: 10%;
-                top: 0;
+                top: 3.2rem;
                 object-fit: contain;
                 opacity: 0;
                 transition: opacity 400ms ease-out;
@@ -137,19 +137,31 @@
           #support{
             position: relative;
 
-            img{
+            #mark{
                 position: absolute;
-                width: 25rem;
-                height: 25rem;
+                width: auto;
+                height: auto;
                 object-fit: contain;
-                bottom: 0;
-                right: 0;
+                bottom: 1rem;
+                right: 50px;
                 opacity: 0;
                 transition: opacity 400ms ease-out;
 
             }
+            #todo{
+              position: absolute;
+              width: auto;
+              height: auto;
+              object-fit: contain;
+              bottom: 9rem;
+              right: 15rem;
+              opacity: 0;
+              transform: rotate(-15deg);
+              transition: opacity 500ms ease-out;
+
+          }
             &:hover{
-                img{
+                #mark, #todo{
                     opacity: 1
                 };
             }

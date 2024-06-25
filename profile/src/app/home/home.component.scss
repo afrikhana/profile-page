@@ -1,10 +1,10 @@
 #home{
+   position: relative;
    width: 100%;
    height: 105vh;
    display: flex;
    flex-direction: column;
    z-index: 1;
-   background-color: #F6F6F6;
    font-family: "Open Sans", sans-serif;
 
    #content{
@@ -21,14 +21,21 @@
         margin:6% 0 0 0;
         width: 100%;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 5rem;
         
         h2{
+            position: absolute;
             color:#B0B0B0;
             font-size: 2rem;
             font-weight:100;
+            
         }
 
         h3{
+            padding-top: 2rem;
             color:#5D5D5D;
         font-weight: 370;
         font-size: 13rem;
@@ -83,41 +90,286 @@
         }
        }
 
-      
+       #footer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 3%;
+        color: #5D5D5D;
+        width: 100%;
+        height: auto;
+        gap: 83%;
+    
+    
+        button{
+            margin: 0 0 0 2%;
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border: 1px solid #5D5D5D;
+            display: grid;
+            justify-content: center;
+            place-items: center;
+            border-radius: 10px;
+    
+            span{
+                font-size: 20px;
+                color: #5D5D5D;
+            }
+        }
+        p{
+            font-weight: 100;
+            
+        }
+       }
 
     
    }
-   #footer{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: 10px;
-    color: #5D5D5D;
-    width: 100%;
-    height: auto;
-    gap: 85%;
+   
 
+   
+}
+@media (max-width: 1640px) {
+    #home{
+        #content{
+            gap: 30px;
+           
+            
 
-    button{
-        margin: 0 0 0 2%;
-        width: 40px;
-        height: 40px;
-        background-color: transparent;
-        border: 1px solid #5D5D5D;
-        display: grid;
-        justify-content: center;
-        place-items: center;
-        border-radius: 10px;
+            #cn1{
+                width: auto;
+                height: auto;
+                h2{
+                    font-size: 1.8rem;
+                }
+                h3{
+                    font-size: 10.5rem;
+                   
+                }
 
-        span{
-            font-size: 20px;
-            color: #5D5D5D;
+                
+            }
+            #footer{
+                gap: 78%;
+
+                span{
+                    font-size: 15px;
+                }
+                button{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 8px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
         }
     }
-    p{
-        font-weight: 100;
-        
+   
+}
+@media (max-width: 1403px) {
+    #home{
+        #content{
+           
+            
+
+            #cn1{
+                width: auto;
+                height: auto;
+                h2{
+                    font-size: 1.6rem;
+                }
+                h3{
+                    font-size: 9.5rem;
+                }
+
+                
+            }
+            #cn2{
+                #class{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                #brackets{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                h3{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+            #footer{
+                gap: 65%;
+                bottom: 30px;
+            }
+        }
     }
-   }
+   
+}
+@media (max-width: 1295px) {
+    #home{
+        height: 60vh;
+        #content{
+            
+            
+
+            #cn1{
+                width: auto;
+                height: auto;
+                h2{
+                    font-size: 1.4rem;
+                }
+                h3{
+                    font-size: 8.5rem;
+                }
+
+                
+            }
+        }
+    }
+   
+}
+@media (max-width: 1171px) {
+    #home{
+        
+        #content{
+            
+            
+            
+
+            #cn1{
+                width: auto;
+                height: auto;
+                h2{
+                    font-size: 1.4rem;
+                }
+                h3{
+                    font-size: 6.5rem;
+                    
+                }
+
+                
+            }
+        }
+    }
+   
+}
+@media (max-width: 1171px) {
+    #home{
+        #content{
+           
+            
+
+            #cn1{
+                width: auto;
+                height: auto;
+                h2{
+                    font-size: 1.4rem;
+                }
+                h3{
+                    font-size: 6.5rem;
+                    
+                }
+
+                
+            }
+        }
+    }
+   
+}
+@media (max-width: 805px) {
+    #home{
+      
+        #content {
+            margin: 8% 0 0 0;
+            margin-left: 0;
+            align-items: center;
+            
+            #cn1 {
+              text-align: center;
+              
+              h3 {
+                font-size: 6rem;
+                
+                &.small {
+                  font-size: 3.5rem;
+                }
+              }
+              
+              #web, #veiw, #dev {
+                margin-left: 0;
+              }
+              
+              #veiw {
+                flex-direction: column;
+                gap: 0;
+              }
+            }
+            
+            #cn2 {
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+              
+              #class, h3, #brackets {
+                font-size: 2rem;
+              }
+            }
+          }
+          
+          #footer {
+            gap: 43%;
+          }
+        }
+    
+   
+}
+@media (max-width: 631px) {
+    #home{
+      
+        #content {
+            margin: 8% 0 0 0;
+            margin-left: 0;
+            align-items: center;
+            position: relative;
+            
+            #cn1 {
+              text-align: center;
+              
+              h3 {
+                font-size: 6rem;
+                
+                &.small {
+                  font-size: 3.5rem;
+                }
+              }
+              
+              #web, #veiw, #dev {
+                margin-left: 0;
+              }
+              
+              #veiw {
+                flex-direction: column;
+                gap: 0;
+              }
+            }
+            
+            #cn2 {
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+              
+              #class, h3, #brackets {
+                font-size: 2rem;
+              }
+            }
+          }
+          
+          #footer {
+            gap: 43%;
+          }
+        }
+    
    
 }

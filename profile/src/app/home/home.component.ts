@@ -20,16 +20,18 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           <h3>Brains in Action</h3>
           <h1 id='brackets'>()</h1>
         </section>
-        
-      </div>
 
-      <!-- fotter -->
+        <!-- fotter -->
       <div id='footer'>
           <button><span class="material-symbols-outlined">
 arrow_cool_down
 </span></button>
           <p>product development by<br> BRIAN MURIGI</p>
         </div>
+        
+      </div>
+
+      
     </div>
   `,
   styleUrls: ['./home.component.scss'],
