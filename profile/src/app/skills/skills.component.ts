@@ -10,11 +10,11 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
    <div id="skills">
         <div class='header'>
               <section id='display'>
-                <section id='dip'>
-                  <h3>Work</h3>
-                  <h1>Section To Show</h1>
-                </section>
-                <h1 id='case'>Case Implemented Skills</h1>
+              <section id='dip'>
+            <h3>Work</h3>
+            <h1>Section To Show <br/>Case Implemented Ideas</h1>
+            
+          </section>
               </section>
               <section id='abt'>
                 <p>It's all about your emotions in art not about perfecting what you think is right</p>

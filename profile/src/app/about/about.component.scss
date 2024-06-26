@@ -6,13 +6,12 @@ $p-letter-spacing-small: 0.03em;
 #about{
     display: flex;
     flex-direction: column;
-    background-color: #d8a6a6;
     width: 100%;
     height: 105vh;
     gap: 20px;
     position: relative;
     padding: 20px;
-    margin-top: 20%;
+
 
 
     .header{
@@ -72,7 +71,7 @@ $p-letter-spacing-small: 0.03em;
             // }
         }
         #abt{
-            background-color: blanchedalmond;
+          
             p {
                 color: #5d5d5d;
                 font-weight: 100;
@@ -93,7 +92,7 @@ $p-letter-spacing-small: 0.03em;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: blue;
+       
         
 
         button {
@@ -153,7 +152,7 @@ $p-letter-spacing-small: 0.03em;
         height: max-content;
         gap: 20%;
         place-items: center;
-        background-color: aqua;
+    
 
 
         #display{
@@ -161,7 +160,7 @@ $p-letter-spacing-small: 0.03em;
             flex-direction: column;
             width: auto;
             gap: 2px;
-            background-color: aquamarine;
+          
             
             
 
@@ -194,4 +193,36 @@ $p-letter-spacing-small: 0.03em;
             
            
         }}
+}
+
+@media (max-width:1300px) {
+    #about{
+       
+        margin: 20% 0 0 0;
+    .header{
+        width: 80%;
+        height: max-content;
+        gap: 20%;
+        place-items: center;
+        
+    
+
+}
+}
+}
+@media (max-width:830px) {
+    #about{
+        
+        margin: 40% 0 0 0;
+        width: 90%;
+    
+}
+}
+@media (max-width:800px) {
+    #about{
+        margin: 50% 0 0 0;
+        width: 90%;
+       
+    
+}
 }
