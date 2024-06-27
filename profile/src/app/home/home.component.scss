@@ -27,7 +27,7 @@
         gap: 5rem;
         
         h2{
-            position: absolute;
+            // position: absolute;
             color:#B0B0B0;
             font-size: 2rem;
             font-weight:100;
@@ -75,7 +75,7 @@
         #class{
             color: #FF800B;
             font-size: 3rem;
-            font-weight:bolder;
+            font-weight:Bold;
         }
         h3{
             color:#B0B0B0;
@@ -85,7 +85,7 @@
         #brackets{
             color: #FF800B;
             font-size: 3rem;
-            font-weight:bolder;
+            font-weight:Bold;
     
         }
        }
@@ -128,39 +128,68 @@
 
    
 }
-@media (max-width: 1640px) {
+@media (min-width: 2560px) {
     #home{
         #content{
-            gap: 30px;
+            position: relative;
+            gap: 50px;
+         
            
             
 
             #cn1{
-                width: auto;
+                width: 100%;
                 height: auto;
+                display: flex;
+                flex-direction: column;
+                // gap: 10rem;
+              
                 h2{
-                    font-size: 1.8rem;
+                    font-size: 3.8rem;
+                   
                 }
                 h3{
-                    font-size: 10.5rem;
+                    
+                    font-size: 18.5rem;
+                    line-height: 12rem;
                    
                 }
 
                 
             }
+            #cn2{
+                
+                h3{
+                    font-size: 5rem;
+                   
+                }
+                #class{
+                    font-size: 5rem;
+                }
+                #brackets{
+                    font-size: 5rem;
+                }
+
+                
+            }
             #footer{
+                position: absolute;
+                bottom: 0;
                 gap: 78%;
 
-                span{
-                    font-size: 15px;
-                }
+
+                
                 button{
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 8px;
+                    width: 80px;
+                    height:80px;
+                    border-radius: 20px;
+                    span{
+                        font-size: 3rem;
+                    }
                 }
                 p{
-                    font-size: 15px;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
                 }
             }
         }

@@ -16,9 +16,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         </div>
         <!-- section2 -->
         <section id='cn2'>
-          <h1 id='class'>Class</h1>
+          <h3 id='class'>Class</h3>
           <h3>Brains in Action</h3>
-          <h1 id='brackets'>()</h1>
+          <h3 id='brackets'>()</h3>
         </section>
 
         <!-- fotter -->

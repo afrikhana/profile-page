@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@
 @Component({
   selector: 'app-clients',
   template: `
+
     <nav>
       <section id='hm' (click)="scrollToElement('home')"><div></div><p>Home</p></section>
       <section id='ab'(click)="scrollToElement('about')"><div></div><p>About</p></section>
@@ -25,6 +26,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@
       </section>
 
       </div>
+
     <router-outlet></router-outlet>
   `,
   styleUrls: ['./clients.component.scss'],
