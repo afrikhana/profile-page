@@ -116,10 +116,7 @@
                 color: #5D5D5D;
             }
         }
-        p{
-            font-weight: 100;
-            
-        }
+        
        }
 
     
@@ -133,6 +130,7 @@
         #content{
             position: relative;
             gap: 50px;
+            width: 95%;
          
            
             
@@ -145,12 +143,12 @@
                 // gap: 10rem;
               
                 h2{
-                    font-size: 3.8rem;
+                    font-size: 2.8rem;
                    
                 }
                 h3{
                     
-                    font-size: 18.5rem;
+                    font-size: 14.5rem;
                     line-height: 12rem;
                    
                 }
@@ -160,14 +158,14 @@
             #cn2{
                 
                 h3{
-                    font-size: 5rem;
+                    font-size: 3rem;
                    
                 }
                 #class{
-                    font-size: 5rem;
+                    font-size: 3rem;
                 }
                 #brackets{
-                    font-size: 5rem;
+                    font-size: 3rem;
                 }
 
                 
@@ -175,20 +173,21 @@
             #footer{
                 position: absolute;
                 bottom: 0;
-                gap: 78%;
+                gap: 80%;
+                width: 100%;
 
 
                 
                 button{
-                    width: 80px;
-                    height:80px;
+                    width: 60px;
+                    height:60px;
                     border-radius: 20px;
                     span{
-                        font-size: 3rem;
+                        font-size: 2rem;
                     }
                 }
                 p{
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                     line-height: 2.5rem;
                 }
             }

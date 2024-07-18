@@ -231,63 +231,100 @@ $p-letter-spacing-small: 0.03em;
 
   
 }
-@media (max-width:1157px) {
+@media (min-width:2560px) {
     #skills{
-        display: flex;
-            flex-direction: column;
-            height: auto;
-          
-        .ccmain{
+      
+
+      .ccmain{
+       
+
+        #content{
             
-            overflow-y: scroll;
-            overflow-x: hidden;
-            place-items: center;
-            gap: 10%;
-            
-
-            #content{
-                height: max-content;
-                overflow-x: scroll;
-                width: 100%;
-                
-            }
-
-            #stack{
-                position: relative;
-               
-                overflow-y: scroll;
-                overflow-x: hidden;
-                height: 100%;
-                width: 100%;
-
-                ::-webkit-scrollbar {
-                    display: none; 
-                }
-                
-                .main{
-                    
-                    width:60%;
-                    overflow-x: hidden;
-                    overflow-y: scroll;
-                    height: 95%;
-
-                    ::-webkit-scrollbar {
-                        display: none; 
-                    }
-                }
-
-                #footer{
-                    position: absolute;
-                    right: 2px;
-                    top: 2px;
-                   
-                }
-            }
-            ::-webkit-scrollbar {
-                display: none; 
+            width: 30%;
+            h3{
+                font-size: 2rem;
+                line-height: 2.5rem;
             }
         }
+
+        #stack{
+           
+            
+            .main{
+               
+                
+                #sst{
+                   
+                    width: 15rem;
+                    height: 10rem;
+    
+                    #colorbox{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    #colorline{
+                        height: 2px;
+                    }
+                    #box{
+                        width: 6rem;
+                        height: 5rem;
+
+                        img{
+                            width: 2rem;
+                            height: 2rem;
+                        }
+
+                    }
+                    
+                }
+            }
+            #footer{
+               
+                width: max-content;
         
+                section{
+                    
+                    width: max-content;
+                    height: max-content;
+                    #colorbox{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    #colorline{
+                        height: 2px;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                    }
+                    #colorbox1{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    #colorline1{
+                        height: 2px;
+                    }
+                    
+                    #colorbox2{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    #colorline2{
+                        height: 2px;
+                    }
+                    
+                    
+                    
+                }
+              }
+          }
+          
+          
+      }
+      
+      
+
+    
     }
+    
 }
 

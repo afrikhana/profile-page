@@ -1,12 +1,12 @@
 
   nav{
-
-    width: max-content;
+    width: 160px;
     height: max-content;
     display: flex;
     flex-direction: column;
     position: fixed;
     // right: 0px;
+    overflow: hidden;
     right: 10px;
     top: 30.5%;
     z-index: 12;
@@ -17,6 +17,8 @@
       flex-direction: row;
       z-index: 11;
       place-items: center;
+    
+      
       cursor: pointer;
       div{
         width: 160px;
@@ -28,68 +30,80 @@
       }
     }
     #hm{
+      position: relative;
       p, div {
-        transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
       }
       height: 40px;
+     
+      
       &:hover{
         p{
-          transform: translateX(-120px);
-          display: inline;
+          transform: translateX(-48px);
+          display: inline-block;
         }
         div{
-          transform: translateX(-30px);
-          width: 50px;
+          transform: translateX(45px);
+          width:50px;
         }
   
       }
     }
     #ab{
-      p, div {
-        transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+     p, div {
+        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
       }
       height: 40px;
+      
+      
       &:hover{
         p{
-          transform: translateX(-120px);
+          transform: translateX(-48px);
+          display: inline;
         }
         div{
-          transform: translateX(-30px);
-          width: 50px;
+          transform: translateX(45px);
+          width:50px;
         }
-        
+  
       }
     }
     #sk{
       p, div {
-        transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
       }
       height: 40px;
+    
+      
       &:hover{
         p{
-          transform: translateX(-120px);
+          transform: translateX(-48px);
+          display: inline;
         }
         div{
-          transform: translateX(-30px);
-          width: 50px;
+          transform: translateX(45px);
+          width:50px;
         }
-        
+  
       }
     }
     #so{
-      p, div {
-        transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+     p, div {
+        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
       }
       height: 40px;
+      
+      
       &:hover{
         p{
-          transform: translateX(-120px);
+          transform: translateX(-48px);
+          display: inline;
         }
         div{
-          transform: translateX(-30px);
-          width: 50px;
+          transform: translateX(45px);
+          width:50px;
         }
-        
+  
       }
     }
   
@@ -136,7 +150,7 @@
 
        
         top: 30.5%;
-        right: 2%;
+        right: 6%;
         // overflow: hidden;
   
       
@@ -237,7 +251,7 @@
         flex-direction: column;
         gap: 90px;
         position: fixed;
-        right: 3%;
+        right: 7%;
         top: 30%;
         z-index: 11;
       

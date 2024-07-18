@@ -26,7 +26,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           <button><span class="material-symbols-outlined">
 arrow_cool_down
 </span></button>
-          <p>product development by<br> BRIAN MURIGI</p>
+         
         </div>
         
       </div>
