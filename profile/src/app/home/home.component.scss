@@ -125,54 +125,52 @@
 
    
 }
-@media (min-width: 2560px) {
+@media (min-width: 1801px) and (min-width:2560) {
     #home{
+        background-color: lightcoral;
         #content{
             position: relative;
             gap: 50px;
-            width: 95%;
+            max-width: 95%;
+            background-color: lightgreen;
          
            
             
 
             #cn1{
-                width: 100%;
+                width: auto;
                 height: auto;
-                display: flex;
-                flex-direction: column;
-                // gap: 10rem;
-              
-                h2{
-                    font-size: 2.8rem;
-                   
-                }
-                h3{
-                    
-                    font-size: 14.5rem;
-                    line-height: 12rem;
-                   
-                }
+                background-color: lightgreen;
+                
+                h2 {
+                    font-size: clamp(2rem, 3.5vw + 2rem, 2.8rem);
+                  }
+                
+                  h3 {
+                    font-size: clamp(9rem, 8vw + 10rem, 16rem);
+                    padding: 3rem;
+                  }
 
                 
             }
             #cn2{
                 
                 h3{
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                    
                 }
                 #class{
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                 }
                 #brackets{
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                 }
 
                 
             }
             #footer{
                 position: absolute;
-                bottom: 0;
+                bottom: 10rem;
                 gap: 80%;
                 width: 100%;
 
@@ -195,7 +193,51 @@
     }
    
 }
-@media (max-width: 1403px) {
+@media (min-width: 1441px) and (max-width: 1800px) {
+    #home{
+        #content{
+           background-color: lightcoral;
+           padding: 2rem 2rem;
+           max-width: 80% ;
+
+            #cn1{
+                width: auto;
+                height: auto;
+                background-color: lightgreen;
+                
+                h2 {
+                    font-size: clamp(2rem, 2.5vw + 1rem, 2.8rem);
+                  }
+                
+                  h3 {
+                    font-size: clamp(7rem, 5vw + 5rem, 12rem);
+                  }
+
+                
+            }
+            #cn2{
+                #class{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                #brackets{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                h3{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+            #footer{
+                gap: 65%;
+                bottom: 30px;
+            }
+        }
+    }
+   
+}
+@media (max-width: 1440px) {
     #home{
         #content{
            
