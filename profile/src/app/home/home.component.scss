@@ -125,14 +125,14 @@
 
    
 }
-@media (min-width: 1801px) and (min-width:2560) {
+@media (min-width: 1870px) and (max-width: 2715px)  {
     #home{
-        background-color: lightcoral;
+        
         #content{
             position: relative;
             gap: 50px;
             max-width: 95%;
-            background-color: lightgreen;
+           
          
            
             
@@ -140,14 +140,14 @@
             #cn1{
                 width: auto;
                 height: auto;
-                background-color: lightgreen;
+            
                 
                 h2 {
-                    font-size: clamp(2rem, 3.5vw + 2rem, 2.8rem);
+                    font-size: clamp(2rem, 1.5vw + 2rem, 2.8rem);
                   }
                 
                   h3 {
-                    font-size: clamp(9rem, 8vw + 10rem, 16rem);
+                    font-size: clamp(9rem, 8vw + 2rem, 18rem);
                     padding: 3rem;
                   }
 
@@ -196,14 +196,14 @@
 @media (min-width: 1441px) and (max-width: 1800px) {
     #home{
         #content{
-           background-color: lightcoral;
+           
            padding: 2rem 2rem;
            max-width: 80% ;
 
             #cn1{
                 width: auto;
                 height: auto;
-                background-color: lightgreen;
+              
                 
                 h2 {
                     font-size: clamp(2rem, 2.5vw + 1rem, 2.8rem);
