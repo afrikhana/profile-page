@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    // right: 0px;
     overflow: hidden;
     right: 10px;
     top: 30.5%;
@@ -32,7 +31,7 @@
     #hm{
       position: relative;
       p, div {
-        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
+        transition: transform 0.3s ease-out, width 0.3s ease-out; 
       }
       height: 40px;
      
@@ -51,7 +50,7 @@
     }
     #ab{
      p, div {
-        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
+        transition: transform 0.3s ease-out, width 0.3s ease-out; 
       }
       height: 40px;
       
@@ -70,7 +69,7 @@
     }
     #sk{
       p, div {
-        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
+        transition: transform 0.3s ease-out, width 0.3s ease-out; 
       }
       height: 40px;
     
@@ -89,7 +88,7 @@
     }
     #so{
      p, div {
-        transition: transform 0.3s ease-out, width 0.3s ease-out; /* Add transition for smoothness */
+        transition: transform 0.3s ease-out, width 0.3s ease-out;
       }
       height: 40px;
       
@@ -151,11 +150,11 @@
        
         top: 30.5%;
         right: 6%;
-        // overflow: hidden;
+      
   
       
         section{
-          // background-color: rgb(28, 233, 233);
+        
           width: 92%;
           overflow: hidden;
          
@@ -176,76 +175,108 @@
         #hm{
          
           p, div {
-            transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+            transition: transform 0.3s ease, width 0.3s ease;
           }
           height: 40px;
-          &:hover{
-            p{
+        
+       
+          p, div {
+            transform: none;
+            width: auto;
+          }
+        
+        
+          &:hover, &.active {
+            p {
               transform: translateX(-70px);
               display: inline;
             }
-            div{
+            div {
               transform: translateX(45px);
               width: 70px;
             }
-      
           }
         }
         #ab{
           p, div {
-            transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+            transition: transform 0.3s ease, width 0.3s ease;
           }
           height: 40px;
-          &:hover{
-            p{
+        
+         
+          p, div {
+            transform: none;
+            width: auto;
+          }
+        
+       
+          &:hover, &.active {
+            p {
               transform: translateX(-70px);
               display: inline;
             }
-            div{
+            div {
               transform: translateX(45px);
               width: 70px;
             }
-            
           }
         }
         #sk{
           p, div {
-            transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+            transition: transform 0.3s ease, width 0.3s ease;
           }
           height: 40px;
-          &:hover{
-            p{
+        
+   
+          p, div {
+            transform: none;
+            width: auto;
+          }
+        
+         
+          &:hover, &.active {
+            p {
               transform: translateX(-70px);
               display: inline;
             }
-            div{
+            div {
               transform: translateX(45px);
               width: 70px;
             }
-            
           }
         }
-        #so{
+        #so {
           p, div {
-            transition: transform 0.3s ease, width 0.3s ease; /* Add transition for smoothness */
+            transition: transform 0.3s ease, width 0.3s ease;
           }
           height: 40px;
-          &:hover{
-            p{
+        
+        
+          p, div {
+            transform: none;
+            width: auto;
+          }
+        
+      
+          &:hover, &.active {
+            p {
               transform: translateX(-70px);
               display: inline;
             }
-            div{
+            div {
               transform: translateX(45px);
               width: 70px;
             }
-            
           }
         }
       
         
         
       }
+      nav section:hover .hover-name,
+nav section.active .hover-name {
+  display: block;
+}
       .animation{
         display: flex;
         flex-direction: column;

@@ -1,7 +1,7 @@
-$p-font-size: 1rem;
+$p-font-size:clamp(0.8rem,0.9vw,1rem);
 $p-letter-spacing: 0.1em;
 
-$p-font-size-small: 1rem;
+$p-font-size-small: clamp(0.8rem,0.9vw,1rem);
 $p-letter-spacing-small: 0.03em;
 #about{
     display: flex;
@@ -10,7 +10,8 @@ $p-letter-spacing-small: 0.03em;
     height: 105vh;
     gap: 20px;
     position: relative;
-    padding: 20px;
+    padding: 30px;
+    margin: 0% 0 0 0;
 
 
 
@@ -52,7 +53,7 @@ $p-letter-spacing-small: 0.03em;
                 }
                 h1{
                     color:#B0B0B0;
-                    font-size: 3rem;
+                    font-size: clamp(2rem,2.6vw,3rem);
                     font-weight: Bold;
                     line-height: 4rem;
     
@@ -60,23 +61,14 @@ $p-letter-spacing-small: 0.03em;
             }
 
             
-            // #case{
-            //     align-self: flex-start;
-            //     color:#B0B0B0;
-            //         font-size: 3rem;
-            //         font-weight: Bold;
-            //         line-height: 4rem;
-                    
-
-            // }
         }
         #abt{
           
             p {
                 color: #5d5d5d;
                 font-weight: 100;
-                font-size: $p-font-size;
-                letter-spacing: $p-letter-spacing;
+                font-size: clamp(0.8rem,0.9vw,1rem);
+                letter-spacing: 0.1em;
               
                 
             }
@@ -127,17 +119,18 @@ $p-letter-spacing-small: 0.03em;
         width: 90%;
     height: 80vh;
     margin-left: 5%;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: auto; /* Allow vertical scrollbar */
+    overflow-x: hidden; 
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
    
 
     ::-webkit-scrollbar {
         display: none; 
     }
 
-    /* Firefox */
+   
     scrollbar-width: none; 
 }
 
@@ -173,7 +166,7 @@ $p-letter-spacing-small: 0.03em;
                     
                     display: flex;
                     flex-direction: row;
-                    //  align-items: flex-end;
+                    
                     
                      
                     
@@ -234,7 +227,7 @@ $p-letter-spacing-small: 0.03em;
                 
                 display: flex;
                 flex-direction: row;
-                //  align-items: flex-end;
+              
                 
                  
                 
@@ -264,7 +257,7 @@ $p-letter-spacing-small: 0.03em;
 @media (max-width:1300px) {
     #about{
        
-        margin: 20% 0 0 0;
+       
     .header{
         width: 80%;
         height: max-content;
@@ -276,17 +269,9 @@ $p-letter-spacing-small: 0.03em;
 }
 }
 }
-@media (max-width:830px) {
-    #about{
-        
-        margin: 40% 0 0 0;
-        width: 90%;
-    
-}
-}
+
 @media (max-width:800px) {
     #about{
-        margin: 50% 0 0 0;
         width: 90%;
        
     

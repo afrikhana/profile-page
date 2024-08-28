@@ -1,8 +1,4 @@
-$p-font-size: 1rem;
-$p-letter-spacing: 0.1em;
 
-$p-font-size-small: 1rem;
-$p-letter-spacing-small: 0.03em;
 #skills{
     display: flex;
     flex-direction: column;
@@ -45,7 +41,7 @@ $p-letter-spacing-small: 0.03em;
                 }
                 h1{
                     color:#B0B0B0;
-                    font-size: 3rem;
+                    font-size: clamp(2rem,2.7vw,3rem);
                     font-weight: Bold;
                     line-height: 4rem;
     
@@ -53,23 +49,18 @@ $p-letter-spacing-small: 0.03em;
             }
 
             
-            #case{
-                align-self: flex-start;
-                color:#B0B0B0;
-                    font-size: 3rem;
-                    font-weight: Bold;
-            }
+            
         }
         #abt{
             p {
                 color: #5d5d5d;
                 font-weight: 100;
-                font-size: $p-font-size;
-                letter-spacing: $p-letter-spacing;
+                font-size: 1rem;
+                letter-spacing: 0.1em;
               
                 @media screen and (max-width: 768px) {
-                  font-size: $p-font-size-small;
-                  letter-spacing: $p-letter-spacing-small;
+                  font-size:1rem;
+                  letter-spacing: 0.03em;
                 }
             }
         }
@@ -90,6 +81,8 @@ $p-letter-spacing-small: 0.03em;
             margin-right: auto;
             width: 40%;
             height: 60vh;
+            overflow-y: auto;
+            padding: 5px 0px;
 
 
             h3{
@@ -97,11 +90,11 @@ $p-letter-spacing-small: 0.03em;
                     font-weight: 400;
                     padding-right: 60px;
                     margin-bottom: 10px; 
-                    font-size: 1.6rem;
+                    font-size: clamp(1rem,1.4vw,1.6rem);
             }
             h1{
                 color: #FF800B;
-                font-size: 3rem;
+                font-size: clamp(1.5rem,2.5vw,3rem);
                     font-weight: 300;
 
             }
@@ -110,6 +103,7 @@ $p-letter-spacing-small: 0.03em;
             margin-left: auto;
             width: 40%;
             height: 60vh;
+            overflow-y: auto;
 
             h3{
                 color: #FF800B;
@@ -177,16 +171,40 @@ $p-letter-spacing-small: 0.03em;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    &::-webkit-scrollbar {
+                        width: 1px;
+                      }
+                    
+                      
+                      &::-webkit-scrollbar {
+                        height: 1px;
+                      }
+                    
+                     
+                      &::-webkit-scrollbar-track {
+                        background: #f1f1f1; 
+                      }
+                    
+                 
+                      &::-webkit-scrollbar-thumb {
+                        background: #B0B0B0;
+                      }
+                    
+                     
+                      &::-webkit-scrollbar-thumb:hover {
+                        background: #555; 
+                      }
                    
                     
 
                     P{
-                        font-size: 0.8rem;
+                        font-size: clamp(0.6rem,0.7vh,0.8rem);
                         color: #FF800B;
                         font-weight: 500;
                     }
                     #been{
                         color: #B0B0B0;
+                        width: auto;
                     }
                     #learn{
                         color: #5D5D5D;
@@ -228,5 +246,3 @@ $p-letter-spacing-small: 0.03em;
     }
 
 }  
-
-  

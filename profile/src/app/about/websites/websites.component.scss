@@ -1,23 +1,23 @@
 .design {
-    width: 80%;
-    height: max-content;
-    padding-bottom: 10rem;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin:0 0 0 15%;
+    width: 90%;
+        height: 70%;
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin:0 0 0 10%;
   
     
 
     #content{
         display: flex;
-        flex-direction: column;
-        gap: 35px;
-        width: 30%;
-        margin: 30px 0 0 0 ;
-        height: max-content;
+            flex-direction: column;
+            gap: 45px;
+            width: 30%;
+            margin: 40px 0 0 0 ;
+            height: max-content;
         p{
-            font-size: 1.6rem;
+            font-size: clamp(1rem,1.4vw,1.6rem);
             line-height: 2rem;
             color: #5D5D5D;
         }
@@ -38,6 +38,9 @@
             flex-direction: row;
             gap: 20px;
             font-weight: 800;
+            p{
+                font-size: clamp(1rem,1.4vw,1.6rem);
+            }
 
             #ss{
                 color: #FF800B;
@@ -49,13 +52,19 @@
             display: flex;
             flex-direction: row;
             gap: 60px;
+            cursor: pointer;
 
             p{
                 display: flex;
                 place-items: center;
                 gap: 10px;
+                font-size: clamp(1rem,1.4vw,1.6rem);
                
 
+            }
+            a{
+                text-decoration: none;
+                color: #5D5D5D;
             }
 
             img{
@@ -95,13 +104,24 @@
     
     @media (max-width: 1311px) {
         .design {
+            width: 80%;
+        height: 50%;
+        padding: 2px;
+      
+        gap: 40px;
+        margin:0 0 0 5%;
+    
             #content {
+                gap: 45px;
+                width: 30%;
+                margin: 40px 0 0 0 ;
+                height: max-content;
                 #images {
                     img {
                         width: 100%;
                         max-width: 200px;
                         height: auto;
-                        background-color: lightcoral;
+                        
                     }
                 }
             }

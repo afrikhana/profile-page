@@ -8,12 +8,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <section id='display'>
       <section id='dip'>
         <h3>Work</h3>
-        <h1>Section To Show</h1>
+        <h1>Section To Show <br/>Case Offered Services</h1>
       </section>
-      <h1 id='case'>Case Implemented Skills</h1>
+      
     </section>
     <section id='abt'>
-      <p>It's all about your emotions in art not about perfecting what you think is right</p>
+      <p>Don't be afraid to move, a sailor skill is proven by the rough storm not the calm sea</p>
     </section>
   </div>
 

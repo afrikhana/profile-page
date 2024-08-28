@@ -21,18 +21,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           <h3 id='brackets'>()</h3>
         </section>
 
-        <!-- fotter -->
-      <div id='footer'>
-          <button><span class="material-symbols-outlined">
-arrow_cool_down
-</span></button>
+ 
          
         </div>
         
       </div>
 
       
-    </div>
+    
   `,
   styleUrls: ['./home.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

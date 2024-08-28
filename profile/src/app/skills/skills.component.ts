@@ -12,12 +12,12 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
               <section id='display'>
               <section id='dip'>
             <h3>Work</h3>
-            <h1>Section To Show <br/>Case Implemented Ideas</h1>
+            <h1>Section To Bring <br/>Forth Studied Stack </h1>
             
           </section>
               </section>
               <section id='abt'>
-                <p>It's all about your emotions in art not about perfecting what you think is right</p>
+                <p>A dream is only a dream when its left on a pillow so don't die with an illusion die with a memory</p>
               </section>
             </div>
 

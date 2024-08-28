@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./websites.component.scss']
 })
 export class WebsitesComponent {
+  // redirectTopage(): void {
+  //   window.location.href = 'https://github.com/afrikhana/Quantum';
+  // }
   getImageUrl(imageName: string): string {
     // Add your image links here
     const imageLinks: any = {

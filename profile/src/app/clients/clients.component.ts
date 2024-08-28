@@ -4,40 +4,46 @@ import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@
   selector: 'app-clients',
   template: `
 
-    <nav>
-      <section id='hm' (click)="scrollToElement('home')"><div></div><p>Home</p></section>
-      <section id='ab'(click)="scrollToElement('about')"><div></div><p>About</p></section>
-      <section id='sk' (click)="scrollToElement('skills')"><div></div><p>Skills</p></section>
-      <section id='so'(click)="scrollToElement('socials')"><div></div><p>Social</p></section>
-      
-    </nav>
-    <div class="animation start-home">
-        <section>
-        <div id='vrt'></div>
-      </section>
-        <section >
-        <div id='vrt'></div>
-      </section>
-        <section>
-        <div id='vrt'></div>
-      </section>
-        <section>
-        <div id='vrt'></div>
-      </section>
-
-      </div>
+<nav>
+  <section id='hm' [class.active]="isActive" (click)="handleClick('home')">
+    <div></div>
+    <p>Home</p>
+  </section>
+  <section id='ab' [class.active]="isActive" (click)="handleClick('about')">
+    <div></div>
+    <p>About</p>
+  </section>
+  <section id='sk' [class.active]="isActive" (click)="handleClick('skills')">
+    <div></div>
+    <p>Skills</p>
+  </section>
+  <section id='so' [class.active]="isActive" (click)="handleClick('socials')">
+    <div></div>
+    <p>Social</p>
+  </section>
+</nav>
+<div class="animation start-home">
+  <section><div id='vrt'></div></section>
+  <section><div id='vrt'></div></section>
+  <section><div id='vrt'></div></section>
+  <section><div id='vrt'></div></section>
+</div>
 
     <router-outlet></router-outlet>
   `,
   styleUrls: ['./clients.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ClientsComponent implements OnInit {
-  @Input() targetId: string = '';
+export class ClientsComponent {
+  isActive = false;
 
-  constructor(private el: ElementRef) {}
+  handleClick(targetId: string) {
+    // Set isActive to true for all sections when any section is clicked
+    this.isActive = true;
 
-  ngOnInit() {}
+    // Scroll to the target element
+    this.scrollToElement(targetId);
+  }
 
   scrollToElement(targetId: string) {
     const targetElement = document.getElementById(targetId);
