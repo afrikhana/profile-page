@@ -3,7 +3,7 @@
     height: 105vh;
     display: grid;
     gap: 1rem;
-    background-color: lightcyan;
+
 
     grid-template-areas: 
         'Navbar Navbar  Navbar'
@@ -11,25 +11,26 @@
         'Sidebar Sidebar  Main'
         'Footer Footer Footer';
     grid-template-columns: 0.4fr 0.4fr 0.8fr;
-    grid-template-rows: 10rem 1fr 0.5fr 0.6fr;
+    grid-template-rows: 10rem 2fr 0.5fr 0.6fr;
 
     .gmail {
         grid-area: Sidebar;
-        background-color: #363636;
+        background-color: #000000;
         border-radius: 25px;
         width: 100%;
         
         #details {
             display: grid;
             gap: 80px;
-            background-color: lightgreen;
             grid-template-columns: repeat(2, 15rem);
             grid-template-rows: auto auto auto;
             grid-template-areas: 
                 'group1 group2'
                 'group3 group4'
-                'group5 group5';
-            margin: 5% 0 0 5%;
+                'group5 group5'
+                'group6 group6'
+                'group7 group7';
+            margin: 5% 0 0 10%;
             width: 80%;
             height: auto;
             
@@ -37,47 +38,129 @@
                 display: flex;
                 flex-direction: column;
                 width: auto;
+              
                 
 
                 label {
                     margin-bottom: 5px;
                     font-weight: bold;
-                    color: #333; // Customize the color as needed
+                    color: #FBE8EB; // Customize the color as needed
                 }
 
                 input {
                     padding: 10px;
-                    border: 1px solid #ccc;
+                    border: 1px solid #B0B0B0;
                     border-radius: 5px;
                     font-size: 1rem;
                     width: 100%;
+                    color: #FF800B;
 
                     &::placeholder {
-                        color: #FFFFFF; // Customize placeholder text color
+                        color: #B0B0B0; // Customize placeholder text color
                     }
 
                     &:focus {
-                        border-color: #FFFFFF; // Border color on focus
-                        outline: #FFFFFF;
+                        border-color: #B0B0B0; // Border color on focus
+                        outline: #B0B0B0;
                         background-color: transparent;
                     }
                 }
+                
             }
 
             .group1 { grid-area: group1;  }
-            .group2 { grid-area: group2; }
-            .group3 { grid-area: group3; }
-            .group4 { grid-area: group4; }
-            .group5 {
-                grid-area: group5; 
-                width: 80%; // Increase width for the last form group
+            .group2 { grid-area: group2; 
+
+                label{
+                    margin-left: 10%;
+                }
+                #email{
+                    margin-left: 10%;
+                }
+            
             }
+            .group3 { grid-area: group3; }
+            .group4 { grid-area: group4; 
+                label{
+                    margin-left: 10%;
+                }
+                #budget{
+                    margin-left: 10%;
+                }
+            
+            }
+           .group5 {
+    grid-area: group5; 
+    width: 100%;
+    
+    
+    
+    textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 100%; // Ensure full width
+        max-width: 80%; // Limit width to 80% of its container
+        height: 5rem; // Set initial height
+        min-width: 200px; // Minimum width
+        box-sizing: border-box; // Include padding and border in width/height calculations
+        resize: vertical; // Allow vertical resizing
+        text-align: justify; // Justify text alignment
+        
+        &::placeholder {
+            color: #FFFFFF; // Customize placeholder text color
+        }
+
+        &:focus {
+            border-color: #FFFFFF; // Border color on focus
+            outline: none;
+            background-color: transparent;
+        }
+    }
+}
+            .group6{
+                grid-area: group6;
+                margin-left: 0;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                color: #FBE8EB;
+                
+                #check{
+                    
+                    border-radius: 2px;
+                    border: 1px solid #FBE8EB;
+                  
+                }
+                
+            }
+        }
+        .group7{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            width: 12%;
+            height: 6%;
+            border-radius: 20px;
+            background-color: #FF800B ;
+            text-decoration: none;
+            border: none;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            margin: 0 0 0 10%;
+
+            span{
+                transform: rotate(-90deg);
+            }
+            
         }
     }
 
     .header {
         grid-area: Main;
-        background-color: lightcoral;
         display: flex;
         flex-direction: column;
         gap: 20rem;
