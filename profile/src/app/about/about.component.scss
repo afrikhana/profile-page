@@ -29,7 +29,7 @@ $p-letter-spacing-small: 0.03em;
         #display{
             display: flex;
             flex-direction: column;
-            width: 60%;
+            width: 45%;
             gap: 2px;
            
             
@@ -63,13 +63,16 @@ $p-letter-spacing-small: 0.03em;
             
         }
         #abt{
-          
+          text-align: right;
+          max-width: 40%;
             p {
                 color: #5d5d5d;
                 font-weight: 100;
                 font-size: clamp(0.8rem,0.9vw,1rem);
                 letter-spacing: 0.1em;
-              
+                max-width: 100%;
+                margin-left: auto;
+               
                 
             }
         }

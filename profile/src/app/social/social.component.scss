@@ -24,7 +24,7 @@ $p-letter-spacing-small: 0.03em;
         #display{
             display: flex;
             flex-direction: column;
-            width: 40%;
+            width: 45%;
             gap: 2px;
             
 
@@ -61,17 +61,18 @@ $p-letter-spacing-small: 0.03em;
             }
         }
         #abt{
-            p {
-                color: #5d5d5d;
-                font-weight: 100;
-                font-size: $p-font-size;
-                letter-spacing: $p-letter-spacing;
-              
-                @media screen and (max-width: 768px) {
-                  font-size: $p-font-size-small;
-                  letter-spacing: $p-letter-spacing-small;
-                }
-            }
+            text-align: right;
+            max-width: 40%;
+              p {
+                  color: #5d5d5d;
+                  font-weight: 100;
+                  font-size: clamp(0.8rem,0.9vw,1rem);
+                  letter-spacing: 0.1em;
+                  max-width: 100%;
+                  margin-left: auto;
+                 
+                  
+              }
         }
 
     }

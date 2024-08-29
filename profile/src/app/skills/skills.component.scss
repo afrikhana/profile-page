@@ -20,7 +20,7 @@
         #display{
             display: flex;
             flex-direction: column;
-            width: 40%;
+            width: 45%;
             gap: 2px;
             
 
@@ -52,17 +52,18 @@
             
         }
         #abt{
-            p {
-                color: #5d5d5d;
-                font-weight: 100;
-                font-size: 1rem;
-                letter-spacing: 0.1em;
-              
-                @media screen and (max-width: 768px) {
-                  font-size:1rem;
-                  letter-spacing: 0.03em;
-                }
-            }
+            text-align: right;
+            max-width: 40%;
+              p {
+                  color: #5d5d5d;
+                  font-weight: 100;
+                  font-size: clamp(0.8rem,0.9vw,1rem);
+                  letter-spacing: 0.1em;
+                  max-width: 100%;
+                  margin-left: auto;
+                 
+                  
+              }
         }
 
     }

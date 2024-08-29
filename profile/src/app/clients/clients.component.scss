@@ -1,6 +1,6 @@
 
   nav{
-    width: 160px;
+    width: clamp(100px, 15%, 160px);
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -10,6 +10,7 @@
     top: 30.5%;
     z-index: 12;
     gap: 90px;
+    // background-color: lightcoral;
   
     section{
       display: flex;
@@ -26,6 +27,7 @@
       }
       p{
         display: none;
+        font-size: clamp(10px, 50%, 30px);
       }
     }
     #hm{
@@ -115,7 +117,7 @@
     position: absolute;
     gap: 90px;
     position: fixed;
-    right: 2%;
+    right: 3%;
     top: 30%;
     z-index: 11;
   
@@ -142,170 +144,26 @@
     
   }
 
-
-  @media (min-width: 2560px) {
-
-      nav{
-
-       
-        top: 30.5%;
-        right: 6%;
-      
-  
-      
-        section{
-        
-          width: 92%;
-          overflow: hidden;
-         
-          display: flex;
-          flex-direction: row;
-          z-index: 11;
-          place-items: center;
-          cursor: pointer;
-          div{
-            width: 160px;
-            height: 1px;
-            background-color: black;
-          }
-          p{
-            display: none;
-          }
-        }
-        #hm{
-         
-          p, div {
-            transition: transform 0.3s ease, width 0.3s ease;
-          }
-          height: 40px;
-        
-       
-          p, div {
-            transform: none;
-            width: auto;
-          }
-        
-        
-          &:hover, &.active {
-            p {
-              transform: translateX(-70px);
-              display: inline;
-            }
-            div {
-              transform: translateX(45px);
-              width: 70px;
-            }
-          }
-        }
-        #ab{
-          p, div {
-            transition: transform 0.3s ease, width 0.3s ease;
-          }
-          height: 40px;
-        
-         
-          p, div {
-            transform: none;
-            width: auto;
-          }
-        
-       
-          &:hover, &.active {
-            p {
-              transform: translateX(-70px);
-              display: inline;
-            }
-            div {
-              transform: translateX(45px);
-              width: 70px;
-            }
-          }
-        }
-        #sk{
-          p, div {
-            transition: transform 0.3s ease, width 0.3s ease;
-          }
-          height: 40px;
-        
-   
-          p, div {
-            transform: none;
-            width: auto;
-          }
-        
-         
-          &:hover, &.active {
-            p {
-              transform: translateX(-70px);
-              display: inline;
-            }
-            div {
-              transform: translateX(45px);
-              width: 70px;
-            }
-          }
-        }
-        #so {
-          p, div {
-            transition: transform 0.3s ease, width 0.3s ease;
-          }
-          height: 40px;
-        
-        
-          p, div {
-            transform: none;
-            width: auto;
-          }
-        
-      
-          &:hover, &.active {
-            p {
-              transform: translateX(-70px);
-              display: inline;
-            }
-            div {
-              transform: translateX(45px);
-              width: 70px;
-            }
-          }
-        }
-      
-        
-        
-      }
-      nav section:hover .hover-name,
-nav section.active .hover-name {
-  display: block;
-}
-      .animation{
-        display: flex;
-        flex-direction: column;
-        gap: 90px;
-        position: fixed;
-        right: 7%;
-        top: 30%;
-        z-index: 11;
-      
-        section{
-          width: 40px;
-          height: 40px;
-          background-color: black;
-          display: grid;
-          place-items: center;
-      
-          #vrt{
-            background-color: black;
-            width: 1px;
-            height: 160px;
-            transform: rotate(90);
-            z-index: 2;
-            
-          }
-         
-          
-      
-        }
-        
-        
+@media (min-width: 768px) and (max-width:1440px){
+  nav{
+    width: clamp(60px, 60vw, 140px);
+    gap: 58px;
+    top: 30%;
+    section{
+      div{
+        width: 140px;
       }
     }
+  }
+  .animation{
+    gap: 70px;
+    section{
+      width: 30px;
+      height: 30px;
+
+      #vrt{
+        height: 100px;
+      }
+    }
+  }
+}

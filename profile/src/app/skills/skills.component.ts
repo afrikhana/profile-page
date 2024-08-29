@@ -17,7 +17,9 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
           </section>
               </section>
               <section id='abt'>
-                <p>A dream is only a dream when its left on a pillow so don't die with an illusion die with a memory</p>
+                <p>"A dream is only a dream when its left on a pillow so don't die with an illusion die with a memory 枕に残された夢は夢のまま (Makura ni nokosareta yume wa yume no mama) — A dream left on a pillow remains a dream."
+
+</p>
               </section>
             </div>
 

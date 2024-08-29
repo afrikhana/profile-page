@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
           
         </section>
         <section id='abt'>
-          <p>It's all about your emotions in art not about perfecting what you think is right</p>
+          <p>Art is a reflection of your emotions, not a pursuit of perfection. It's about expressing what you feel, not just perfecting what you think is right. 心の声を信じて、そのままのあなたを描いてください (Kokoro no koe o shinjite, sono mama no anata o egaite kudasai) — Trust the voice of your heart, and paint yourself just as you are.</p>
         </section>
       </div>
       <div class='content'>

@@ -1,11 +1,11 @@
 .op {
     position: fixed;
-    width: 50%;
+    width: 100%;
     border-radius: 20px;
-    left: 25%;
+    // left: 25%;
     height: 60px;
     background: linear-gradient(to bottom, rgba(246, 246, 246, 0.9), rgba(246, 246, 246, 0.7)); /* Adjust alpha values for desired translucency */
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1); 
+    // box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1); 
     top: 0;
     color: white(255, 255, 255, 1.8); 
   

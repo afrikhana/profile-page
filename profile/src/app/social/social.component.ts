@@ -13,7 +13,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       
     </section>
     <section id='abt'>
-      <p>Don't be afraid to move, a sailor skill is proven by the rough storm not the calm sea</p>
+      <p>Don’t be afraid to move forward. A sailor’s true skill is proven by navigating through rough storms, not by drifting in calm seas. 荒波に挑むことで、本当の力が試される (Aranami ni idomu koto de, hontō no chikara ga tamesareru) — It is by challenging the rough waves that true strength is tested.</p>
     </section>
   </div>
 
