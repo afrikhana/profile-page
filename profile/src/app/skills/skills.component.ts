@@ -11,7 +11,7 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
         <div class='header'>
               <section id='display'>
               <section id='dip'>
-            <h3>Work</h3>
+            <h3>Skills</h3>
             <h1>Section To Bring <br/>Forth Studied Stack </h1>
             
           </section>

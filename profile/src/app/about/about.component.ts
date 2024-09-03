@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
       <div class='header'>
         <section id='display'>
           <section id='dip'>
-            <h3>Work</h3>
+            <h3>About</h3>
             <h1>Section To Show <br/>Case Implemented Ideas</h1>
             
           </section>
