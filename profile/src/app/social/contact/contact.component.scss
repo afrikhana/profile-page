@@ -2,7 +2,8 @@
     width: 100%;
     height: 105vh;
     display: grid;
-    gap: 1rem;
+    gap: 2%;
+   
 
 
     grid-template-areas: 
@@ -10,19 +11,21 @@
         'Sidebar Sidebar  Main'
         'Sidebar Sidebar  Main'
         'Footer Footer Footer';
-    grid-template-columns: 0.4fr 0.4fr 0.8fr;
-    grid-template-rows: 10rem 2fr 0.5fr 0.6fr;
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: 20% 51.61% 12% 15%;
 
     .gmail {
         grid-area: Sidebar;
         background-color: #000000;
         border-radius: 25px;
         width: 100%;
+        height: 100%;
         
         #details {
+           
             display: grid;
-            gap: 80px;
-            grid-template-columns: repeat(2, 15rem);
+            gap: 10%;
+            // grid-template-columns: repeat(2, 24%);
             grid-template-rows: auto auto auto;
             grid-template-areas: 
                 'group1 group2'
@@ -32,12 +35,11 @@
                 'group7 group7';
             margin: 5% 0 0 10%;
             width: 80%;
-            height: auto;
+            height: 80%;
             
             .form-group {
                 display: flex;
                 flex-direction: column;
-                width: auto;
               
                 
 
@@ -52,7 +54,7 @@
                     border: 1px solid #B0B0B0;
                     border-radius: 5px;
                     font-size: 1rem;
-                    width: 100%;
+                    width: 80%;
                     color: #FF800B;
 
                     &::placeholder {
@@ -90,8 +92,8 @@
             
             }
            .group5 {
-    grid-area: group5; 
-    width: 100%;
+                grid-area: group5; 
+                width: 100%;
     
     
     
@@ -102,11 +104,10 @@
         font-size: 1rem;
         width: 100%; // Ensure full width
         max-width: 80%; // Limit width to 80% of its container
-        height: 5rem; // Set initial height
-        min-width: 200px; // Minimum width
+        height: 15%; // Set initial height
+        min-width: 20%; // Minimum width
         box-sizing: border-box; // Include padding and border in width/height calculations
-        resize: vertical; // Allow vertical resizing
-        text-align: justify; // Justify text alignment
+        
         
         &::placeholder {
             color: #FFFFFF; // Customize placeholder text color
@@ -120,11 +121,13 @@
     }
 }
             .group6{
+              
                 grid-area: group6;
+                height: min-content;
                 margin-left: 0;
                 display: flex;
                 flex-direction: row;
-                gap: 20px;
+                gap: 2%;
                 color: #FBE8EB;
                 
                 #check{
@@ -139,7 +142,7 @@
         .group7{
             display: flex;
             flex-direction: row;
-            gap: 5px;
+            gap: 5%;
             width: 12%;
             height: 6%;
             border-radius: 20px;
@@ -149,7 +152,7 @@
             color: white;
             align-items: center;
             justify-content: center;
-            font-size: 1rem;
+            font-size: clamp(0.8rem,1vw,1rem);
             margin: 0 0 0 10%;
 
             span{

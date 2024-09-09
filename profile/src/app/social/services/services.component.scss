@@ -146,7 +146,7 @@
               object-fit: contain;
               bottom: 12%;
               right: 10%;
-              max-width: clamp(5rem, 18vw, 15rem);
+              max-width: clamp(6.5rem, 18vw, 15rem);
             
               opacity: 0;
               transition: opacity 400ms ease-out;
@@ -156,7 +156,7 @@
             position: absolute;
             width: auto;
             height: auto;
-            max-width: clamp(5rem, 18vw, 15rem);
+            max-width: clamp(6.5rem, 18vw, 15rem);
             object-fit: contain;
             bottom: 35%;
             right: 30%;
