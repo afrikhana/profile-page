@@ -1,150 +1,57 @@
 #home{
-  //  position: absolute;
-   width: 100%;
-   height: 105vh;
-   display: flex;
-   flex-direction: column;
-   z-index: 1;
-   font-family: "Open Sans", sans-serif;
-   padding: 0 0px;
-
-
-   #content{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    position: absolute;
-    left: 2%;
-    height:100vh;
-    gap: 20px;
-    
-
-    #cn1{
-        margin:6% 0 0 0;
-        width: 100%;
-        height: auto;
+    #content{
         display: flex;
         flex-direction: column;
-        position: relative;
-        gap: 3rem;
-        
-        h2{
-            // position: absolute;
-            color:#B0B0B0;
-            font-size: clamp(1rem,1.8vw,2.5rem);
-            font-weight:100;
+        justify-content: space-between;
+        gap: 10vh;
+        #cn1{
+            margin: 4% 0 0 4%;
+            justify-content: space-evenly;
             
-        }
+            h2{
+                color:#B0B0B0;
+                font-size: clamp(1rem,1.8vw,2.5rem);
+                font-weight:100;
+            }
+            h3{
+                color:#5D5D5D;
+                font-weight: 370;
+                font-size: clamp(8rem, 10vw,15rem);
+                line-height: clamp(6rem, 10vw, 12rem);
+            }
+            #des{
+                display: flex;
+                flex-direction: row;
+                margin-left: 24%;
 
-        h3{
-            // padding-top: 2rem;
-            color:#5D5D5D;
-        font-weight: 370;
-        font-size: clamp(8rem, 10vw,13rem);
-        line-height: 10rem;
-        }
-        #web{
-        // line-height: 10rem;
-        margin: 0 0 0 5%;
-        }
-
-        #veiw{
-            display: flex;
-            flex-direction: row;
-            margin: 0 0 0 23%;
-            gap: 5%;
-
-
-            #and{
-                color: #FF800B;
-                font-weight: 100;
+                span{
+                    color: #FF800B;
+                }
+            }
+            #web{
+                margin-left: 8%;
+            }
+            #dev{
+                margin-left: 16%;
             }
         }
-        #dev{
-            margin: 0 0 0 10%;
-            line-height: 8rem;
-        }
+        #cn2{
+            display: flex;
+            flex-direction: row;
+            margin: 0 0 0 4%;
+            gap: 1%;
 
+            h3{
+                color:#B0B0B0;
+                font-size: clamp(1rem,2.5vw,3rem);
+                font-weight: Bold;
+            }
+            #class{
+                    color: #FF800B;
+                    font-size: clamp(1rem,2.5vw,3rem);
+                    font-weight:Bold;
+                }
+
+        }
     }
-
-    
-
-    #cn2{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        margin: 10% 0 0 0;
-
-        #class{
-            color: #FF800B;
-            font-size: clamp(1.5rem,2.5vw,3rem);
-            font-weight:Bold;
-        }
-        h3{
-            color:#B0B0B0;
-            font-size: clamp(1.5rem,2.5vw,3rem);
-            font-weight: Bold;
-        }
-        #brackets{
-            color: #FF800B;
-            font-size: clamp(1.5rem,2.5vw,3rem);
-            font-weight:Bold;
-    
-        }
-       }
-
-     
-
-    
-   }
-   
-
-   
 }
-
-// @media (max-width: 631px) {
-//     #home{
-      
-//         #content {
-//             margin: 8% 0 0 0;
-//             margin-left: 0;
-//             align-items: center;
-//             position: relative;
-            
-//             #cn1 {
-//               text-align: center;
-              
-//               h3 {
-//                 font-size: 6rem;
-                
-//                 &.small {
-//                   font-size: 3.5rem;
-//                 }
-//               }
-              
-//               #web, #veiw, #dev {
-//                 margin-left: 0;
-//               }
-              
-//               #veiw {
-//                 flex-direction: column;
-//                 gap: 0;
-//               }
-//             }
-            
-//             #cn2 {
-//               flex-direction: column;
-//               align-items: center;
-//               gap: 5px;
-              
-//               #class, h3, #brackets {
-//                 font-size: 2rem;
-//               }
-//             }
-//           }
-          
-          
-//         }
-    
-   
-// }

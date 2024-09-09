@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-clients',
+  selector: 'div.app-clients',
   template: `
 
 <nav>

@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-about',
+  selector: '.app-about',
   template: `
     <div id='about'>
       <div class='header'>

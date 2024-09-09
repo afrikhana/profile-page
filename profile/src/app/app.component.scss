@@ -1,6 +1,81 @@
-.maint{
-    display: flex;
-    flex-direction: column;
-    
-    position: absolute;
+.maint {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto; /* Let the grid expand based on content */
+    // Each section occupies a full row
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 105vh); // 5 rows for sections, excluding the header
+    grid-auto-flow: row;
+    gap: 0; // No gap between rows
+
+    // Define grid areas for each section
+    grid-template-areas: 
+        "home"
+        "about"
+        "skills"
+        "social"
+        "clients";
+
+    @media (max-width: 1536px) {
+        max-width: 1536px;
+    }
+
+    @media (max-width: 1280px) {
+        max-width: 1280px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 1024px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media (max-width: 640px) {
+        max-width: 640px;
+    }
+}
+
+// Fixed header styling
+app-opcity-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: #B0B0B0 ; /* Example background color */
+}
+
+// Assigning grid areas to child elements
+.app-home {
+    grid-area: home;
+    width: 100%;
+    height: 100%;
+}
+
+.app-about {
+    grid-area: about;
+    width: 100%;
+    height: 100%;
+}
+
+.app-skills {
+    grid-area: skills;
+    width: 100%;
+    height: 100%;
+}
+
+.app-social {
+    grid-area: social;
+    width: 100%;
+    height: 100%;
+}
+
+.app-clients {
+    grid-area: clients;
+    width: 100%;
+    height: 100%;
 }

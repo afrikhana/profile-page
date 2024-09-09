@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-social',
+  selector: '.app-social',
   template: `
     <div id="socials">
     <div class='header'>

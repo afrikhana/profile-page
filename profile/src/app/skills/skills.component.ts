@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component, OnInit , OnDestroy, ChangeDetectorR
       course: string;
     }
 @Component({
-  selector: 'app-skills',
+  selector: '.app-skills',
   template: `
    <div id="skills">
         <div class='header'>
