@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <div class='header'>
     <section id='display'>
       <section id='dip'>
-        <h3>Socials</h3>
+        <h3>Services</h3>
         <h1>Section To Show <br/>Case Offered Services</h1>
       </section>
       

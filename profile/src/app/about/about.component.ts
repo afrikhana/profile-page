@@ -21,8 +21,8 @@ import { Router } from '@angular/router';
       <div class='content'>
         <p>{{ currentName }}<p>
       <button [class.rotated]="isRotated" (click)="toggleContent()">
-          <span class="material-symbols-outlined">
-            arrow_cool_down
+                <span class="material-symbols-outlined">
+          steppers
           </span>
         </button>
       </div>

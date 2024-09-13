@@ -1,41 +1,43 @@
 <div class="display">
-    <div class="gmail">
-        <div id="details">
+    <form (submit)="send()" action="javascript:void(0)" class="gmail">
+        <div [formGroup]="form" id="details" >
             <div class="form-group group1">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Jhon Doe">
+                <input formControlName="from_name" type="text" id="name" placeholder="Jhon Doe">
             </div>
             <div class="form-group group2">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="j.c@gmail.com">
+                <input formControlName="from_email" type="text" id="email" placeholder="j.c@gmail.com">
             </div>
             <div class="form-group group3">
                 <label for="services">Services</label>
-                <input type="text" id="services" placeholder="Design, Development etc">
+                <input formControlName="service" type="text" id="services" placeholder="Design, Development etc">
             </div>
             <div class="form-group group4">
                 <label for="budget">Budget</label>
-                <input type="text" id="budget" placeholder="$600">
+                <input formControlName="budget" type="text" id="budget" placeholder="$600">
             </div>
             <div class="form-group group5">
-                <label for="details">Project Details</label>
-                <input type="text" id="detail" placeholder="Brief project detail">
+                <label for="detail">Project Details</label>
+                <input formControlName="message" type="text" id="detail" placeholder="Brief project detail">
             </div>
             <div class="group6">
-                <input type="checkbox" id="check">
-                <label for="check">By submitting this form you agree with the term and conditions</label>
+                <input formControlName="check" type="checkbox" id="check">
+                <label  for="check">By submitting this form you agree with the term and conditions</label>
             </div>
+           
         </div>
-        <button class="group7">Send
+        <button type="submit" class="group7" [disabled]="isSubmitting">Send
             <span class="material-symbols-outlined">
                 arrow_cool_down
               </span>
         </button>
-    </div>
+        
+    </form>
     <div class="header">
         <section id='dip'>
             <h3>Contacts</h3>
-            <h1>Section To Show <br/>Case Offered Services</h1>
+            <h1>Feel free to reach out.<br/>I'd love to work with</h1>
           </section>
           <section id="time">
             <p>Local Time</p>
@@ -54,7 +56,7 @@
         <div class="underline"></div>
         
     </div>
-
+   
     
     
 </div>

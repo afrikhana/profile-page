@@ -1,9 +1,13 @@
 #home{
+    width: 100%;
+    height: 100%;
     #content{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 10vh;
+        // justify-content: space-between;
+        gap: 15%;
         #cn1{
             margin: 4% 0 0 4%;
             justify-content: space-evenly;
@@ -23,9 +27,11 @@
                 display: flex;
                 flex-direction: row;
                 margin-left: 24%;
+                gap: 5%;
 
                 span{
                     color: #FF800B;
+                    font-weight: 100;
                 }
             }
             #web{

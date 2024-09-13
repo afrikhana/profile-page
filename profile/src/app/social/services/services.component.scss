@@ -15,8 +15,8 @@
       
       
       div{
-          width: calc(30% - 30px);
-          height: 30vh;
+          width: 29%;
+          height: clamp(13vh,30vw,30vh);
           border-radius: 20px;
           border: 0.8px solid #454545;
           display: flex;
@@ -28,24 +28,29 @@
 
           h1{
               color: #B0B0B0;
-              font-size: clamp(1rem,2vw,3rem);
+              font-size: clamp(0.8rem,2vw,3rem);
               font-weight: 200;
 
           }
-          h2{
-              color: #5D5D5D;
-              font-size: clamp(1rem,2vw,3rem);
-              font-weight: 200;
-          }
-          p{
-              color: #B0B0B0;
-              font-size: clamp(0.8rem,1.1vw,1.2rem);
-              font-weight: 300;
-          }
+          
           section{
               display: flex;
               flex-direction: column;
-              gap: 2px;
+              width: 100%;
+              height: min-content;
+              gap: 0.3%;
+            
+
+              h2{
+                color: #5D5D5D;
+                font-size: clamp(0.8rem,2vw,3rem);
+                font-weight: 200;
+            }
+            p{
+                color: #B0B0B0;
+                font-size: clamp(0.6rem,1.1vw,1.2rem);
+                font-weight: 300;
+            }
           }
 
           &:hover{
@@ -138,6 +143,7 @@
         #support{
           position: relative;
           width: 56%;
+          overflow: hidden;
 
           #mark{
               position: absolute;
@@ -146,7 +152,7 @@
               object-fit: contain;
               bottom: 12%;
               right: 10%;
-              max-width: clamp(6.5rem, 18vw, 15rem);
+              max-width: clamp(3.5rem, 18vw, 15rem);
             
               opacity: 0;
               transition: opacity 400ms ease-out;
@@ -156,7 +162,7 @@
             position: absolute;
             width: auto;
             height: auto;
-            max-width: clamp(6.5rem, 18vw, 15rem);
+            max-width: clamp(3.5rem, 18vw, 15rem);
             object-fit: contain;
             bottom: 35%;
             right: 30%;

@@ -144,7 +144,7 @@
     
   }
 
-@media (min-width: 768px) and (max-width:1440px){
+@media (min-width: 1260px) and (max-width:1440px){
   nav{
     width: clamp(60px, 60vw, 140px);
     gap: 58px;
@@ -165,5 +165,17 @@
         height: 100px;
       }
     }
+  }
+}
+@media (max-width:1180px){
+  nav{
+    display: none;
+
+    section{
+      display: none;
+    }
+  }
+  .animation{
+    display: none;
   }
 }
